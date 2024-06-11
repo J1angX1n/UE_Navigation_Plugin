@@ -38,19 +38,6 @@ UNavigationTargetComponent::UNavigationTargetComponent()
 	// ...
 }
 
-UNavigationTargetComponent::~UNavigationTargetComponent()
-{
-	UWorld* world = GetWorld();
-
-	if (world)
-	{
-		UGameInstance* ins = UGameplayStatics::GetGameInstance(world);
-		UNavGameInstanceSubsystem* sys = ins->GetSubsystem<UNavGameInstanceSubsystem>();
-
-		sys->RemoveTarget((AActor*)this);
-	}
-}
-
 // Called when the game starts
 void UNavigationTargetComponent::BeginPlay()
 {
@@ -85,7 +72,7 @@ bool UNavigationTargetComponent::GetIntersectedPoint(const FVector2D& p1, const 
 
 	
 	//线段不共线但不相交
-	if (t < 0 || t > 1 || u < 0 || u > 1)
+	if (t < 0 || t>1 || u < 0 || u>1)
 	{
 		return false;
 	}
@@ -149,19 +136,16 @@ void UNavigationTargetComponent::RemoveNavWidgets()
 
 void UNavigationTargetComponent::ShowInside()
 {
-	if ((m_NavData->realPos - m_PrePos).Length() <= FZero)
-	{
-		return;
-	}
-
 	if (!WidgetInside->IsInViewport())
 	{
 		WidgetInside->AddToViewport();
 	}
+	
+	WidgetInside->SetVisibility(ESlateVisibility::Visible);
 
 	if (WidgetOutside->IsInViewport())
 	{
-		WidgetOutside->RemoveFromParent();
+		WidgetOutside->SetVisibility(ESlateVisibility::Collapsed);
 	}
 
 	m_NavData->outsideScreen = false;
@@ -183,11 +167,6 @@ void UNavigationTargetComponent::ShowOutside()
 		return;
 	}
 
-	if ((m_NavData->realPos - m_PrePos).Length() <= FZero)
-	{
-		return;
-	}
-
 	FVector2D screenSize;
 	world->GetGameViewport()->GetViewportSize(screenSize);
 	double screenWidth = screenSize.X, screenHeight = screenSize.Y;
@@ -195,13 +174,15 @@ void UNavigationTargetComponent::ShowOutside()
 
 	if (WidgetInside->IsInViewport())
 	{
-		WidgetInside->RemoveFromParent();
+		WidgetInside->SetVisibility(ESlateVisibility::Collapsed);
 	}
 
 	if (!WidgetOutside->IsInViewport())
 	{
 		WidgetOutside->AddToViewport();
 	}
+	
+	WidgetOutside->SetVisibility(ESlateVisibility::Visible);
 
 	m_NavData->outsideScreen = true;
 	float Scale = UWidgetLayoutLibrary::GetViewportScale(this);
@@ -328,7 +309,7 @@ bool UNavigationTargetComponent::UpdateNavData()
 		RemoveNavWidgets();
 		return false;
 	}
-	
+
 	UWorld* world = GetWorld();
 
 	if (world)
