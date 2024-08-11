@@ -29,7 +29,7 @@ public class UE_Navigation : ModuleRules
                 "CoreUObject",
                 "Engine",
                 "InputCore",
-				"EnhancedInput",
+                "EnhancedInput",
 				"UMG",
 				// ... add other public dependencies that you statically link with here ...
 			}
@@ -43,7 +43,6 @@ public class UE_Navigation : ModuleRules
 				//"Engine",
 				"Slate",
 				"SlateCore",
-				
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

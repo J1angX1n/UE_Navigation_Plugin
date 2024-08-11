@@ -27,9 +27,13 @@ struct Z_Construct_UFunction_UNavigationComponent_GetAllNavDatas_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "NavComponent" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xef\xbf\xbd\xef\xbf\xbd\xc8\xa1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd0\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xc8\xa1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd0\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+#endif
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
@@ -97,7 +101,7 @@ struct Z_Construct_UClass_UNavigationComponent_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UNavigationComponent_GetAllNavDatas, "GetAllNavDatas" }, // 3976909141
+		{ &Z_Construct_UFunction_UNavigationComponent_GetAllNavDatas, "GetAllNavDatas" }, // 3759952518
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -150,14 +154,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UNavigationComponent);
 // End Class UNavigationComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavigationComponent, UNavigationComponent::StaticClass, TEXT("UNavigationComponent"), &Z_Registration_Info_UClass_UNavigationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationComponent), 1201940980U) },
+		{ Z_Construct_UClass_UNavigationComponent, UNavigationComponent::StaticClass, TEXT("UNavigationComponent"), &Z_Registration_Info_UClass_UNavigationComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationComponent), 2259942151U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationComponent_h_3549400104(TEXT("/Script/UE_Navigation"),
-	Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationComponent_h_3771595550(TEXT("/Script/UE_Navigation"),
+	Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

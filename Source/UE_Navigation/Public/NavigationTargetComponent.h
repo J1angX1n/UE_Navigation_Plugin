@@ -20,7 +20,6 @@ class UE_NAVIGATION_API UNavigationTargetComponent : public UActorComponent
 public:	
 	// Sets default values for this component's properties
 	UNavigationTargetComponent();
-	~UNavigationTargetComponent();
 
 protected:
 	// Called when the game starts

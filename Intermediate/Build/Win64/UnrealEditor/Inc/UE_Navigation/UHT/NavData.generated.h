@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define UE_NAVIGATION_NavData_generated_h
 
-#define FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUNavData(); \
 	friend struct Z_Construct_UClass_UNavData_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(UNavData)
 
 
-#define FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	UNavData(UNavData&&); \
@@ -34,12 +34,12 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UNavData)
 
 
-#define FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_12_PROLOG
-#define FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_15_GENERATED_BODY \
+#define FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_12_PROLOG
+#define FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_15_INCLASS_NO_PURE_DECLS \
-	FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_15_ENHANCED_CONSTRUCTORS \
+	FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_15_INCLASS_NO_PURE_DECLS \
+	FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -47,7 +47,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> UE_NAVIGATION_API UClass* StaticClass<class UNavData>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h
+#define CURRENT_FILE_ID FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

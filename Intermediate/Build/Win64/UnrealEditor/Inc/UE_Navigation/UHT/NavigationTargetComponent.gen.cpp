@@ -11,6 +11,7 @@ void EmptyLinkFunctionForGeneratedCodeNavigationTargetComponent() {}
 
 // Begin Cross Module References
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
+UE_NAVIGATION_API UClass* Z_Construct_UClass_UNavData_NoRegister();
 UE_NAVIGATION_API UClass* Z_Construct_UClass_UNavigationTargetComponent();
 UE_NAVIGATION_API UClass* Z_Construct_UClass_UNavigationTargetComponent_NoRegister();
 UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
@@ -41,23 +42,44 @@ struct Z_Construct_UClass_UNavigationTargetComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Diff_MetaData[] = {
 		{ "Category", "NavTarget" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xeb\xa3\xac\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xb1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc8\xa5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc7\xbf\xc5\xbe\xde\xb4\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xb1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xbe\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd2\xaa\xef\xbf\xbd\xef\xbf\xbd\xc8\xa5\xef\xbf\xbd\xeb\xbe\xb6\n" },
+#endif
 		{ "ModuleRelativePath", "Public/NavigationTargetComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xeb\xa3\xac\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xb1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc8\xa5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd6\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc7\xbf\xc5\xbe\xde\xb4\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xb1\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xbe\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xd2\xaa\xef\xbf\xbd\xef\xbf\xbd\xc8\xa5\xef\xbf\xbd\xeb\xbe\xb6" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetInside_MetaData[] = {
 		{ "Category", "NavTarget" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbb\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xcd\xbc\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NavigationTargetComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbb\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xcd\xbc" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetOutside_MetaData[] = {
 		{ "Category", "NavTarget" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbb\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xcd\xbc\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/NavigationTargetComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "\xc4\xbf\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xc4\xbb\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xca\xbe\xef\xbf\xbd\xc4\xb5\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xcd\xbc" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_m_NavData_MetaData[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\n" },
+#endif
+		{ "ModuleRelativePath", "Public/NavigationTargetComponent.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd\xef\xbf\xbd" },
+#endif
 	};
 #endif // WITH_METADATA
 	static void NewProp_Enable_SetBit(void* Obj);
@@ -65,6 +87,7 @@ struct Z_Construct_UClass_UNavigationTargetComponent_Statics
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_Diff;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WidgetInside;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WidgetOutside;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_m_NavData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -80,11 +103,13 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UNavigationTarge
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_Diff = { "Diff", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationTargetComponent, Diff), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Diff_MetaData), NewProp_Diff_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_WidgetInside = { "WidgetInside", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationTargetComponent, WidgetInside), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetInside_MetaData), NewProp_WidgetInside_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_WidgetOutside = { "WidgetOutside", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationTargetComponent, WidgetOutside), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetOutside_MetaData), NewProp_WidgetOutside_MetaData) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_m_NavData = { "m_NavData", nullptr, (EPropertyFlags)0x0020080000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UNavigationTargetComponent, m_NavData), Z_Construct_UClass_UNavData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_m_NavData_MetaData), NewProp_m_NavData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UNavigationTargetComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_Enable,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_Diff,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_WidgetInside,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_WidgetOutside,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UNavigationTargetComponent_Statics::NewProp_m_NavData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UNavigationTargetComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UNavigationTargetComponent_Statics::DependentSingletons[])() = {
@@ -120,17 +145,18 @@ template<> UE_NAVIGATION_API UClass* StaticClass<UNavigationTargetComponent>()
 	return UNavigationTargetComponent::StaticClass();
 }
 DEFINE_VTABLE_PTR_HELPER_CTOR(UNavigationTargetComponent);
+UNavigationTargetComponent::~UNavigationTargetComponent() {}
 // End Class UNavigationTargetComponent
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics
+struct Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavigationTargetComponent, UNavigationTargetComponent::StaticClass, TEXT("UNavigationTargetComponent"), &Z_Registration_Info_UClass_UNavigationTargetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationTargetComponent), 1141741442U) },
+		{ Z_Construct_UClass_UNavigationTargetComponent, UNavigationTargetComponent::StaticClass, TEXT("UNavigationTargetComponent"), &Z_Registration_Info_UClass_UNavigationTargetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavigationTargetComponent), 290679020U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationTargetComponent_h_2298487860(TEXT("/Script/UE_Navigation"),
-	Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationTargetComponent_h_2314447480(TEXT("/Script/UE_Navigation"),
+	Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavigationTargetComponent_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

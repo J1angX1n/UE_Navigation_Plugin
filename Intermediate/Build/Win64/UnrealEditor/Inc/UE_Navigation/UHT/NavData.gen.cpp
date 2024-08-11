@@ -30,7 +30,9 @@ struct Z_Construct_UClass_UNavData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "NavData.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/NavData.h" },
@@ -78,14 +80,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UNavData);
 // End Class UNavData
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_Statics
+struct Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavData, UNavData::StaticClass, TEXT("UNavData"), &Z_Registration_Info_UClass_UNavData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavData), 2727789679U) },
+		{ Z_Construct_UClass_UNavData, UNavData::StaticClass, TEXT("UNavData"), &Z_Registration_Info_UClass_UNavData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavData), 1504765629U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_2913126324(TEXT("/Script/UE_Navigation"),
-	Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavData_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_2394430883(TEXT("/Script/UE_Navigation"),
+	Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavData_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration

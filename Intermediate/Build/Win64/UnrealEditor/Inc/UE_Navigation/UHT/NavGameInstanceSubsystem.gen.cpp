@@ -261,7 +261,9 @@ struct Z_Construct_UClass_UNavGameInstanceSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "IncludePath", "NavGameInstanceSubsystem.h" },
 		{ "ModuleRelativePath", "Public/NavGameInstanceSubsystem.h" },
 	};
@@ -316,14 +318,14 @@ DEFINE_VTABLE_PTR_HELPER_CTOR(UNavGameInstanceSubsystem);
 // End Class UNavGameInstanceSubsystem
 
 // Begin Registration
-struct Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics
+struct Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UNavGameInstanceSubsystem, UNavGameInstanceSubsystem::StaticClass, TEXT("UNavGameInstanceSubsystem"), &Z_Registration_Info_UClass_UNavGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavGameInstanceSubsystem), 376451143U) },
+		{ Z_Construct_UClass_UNavGameInstanceSubsystem, UNavGameInstanceSubsystem::StaticClass, TEXT("UNavGameInstanceSubsystem"), &Z_Registration_Info_UClass_UNavGameInstanceSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UNavGameInstanceSubsystem), 4172009462U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_4101955952(TEXT("/Script/UE_Navigation"),
-	Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Plugins_UE_Navigation_HostProject_Plugins_UE_Navigation_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics::ClassInfo),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_4213701016(TEXT("/Script/UE_Navigation"),
+	Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UE_Study_Plugins_UE_Navigation_Plugin_Source_UE_Navigation_Public_NavGameInstanceSubsystem_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
 // End Registration
